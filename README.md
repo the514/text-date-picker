@@ -2,6 +2,7 @@
 
 #Usage
 include bootstrap, jquery and text-date-picker
+
     <link rel="stylesheet" href="assets/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/date-picker-style.css">
     <script src="js/jquery-1.12.3.min.js"></script>
