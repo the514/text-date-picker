@@ -330,6 +330,12 @@
       theDatePicker.init(thisIdName, thisId, object.setDaysInfo, object.festival);
       (object.templet=="small")?$("#"+thisIdName+"-text-date-picker").addClass("small"):"";
 
+      if(showThisDate){
+
+        $("#"+thisIdName+"-text-date-picker").find("td[date='"+theDatePicker.formatDate("", showThisDate.getDate(), objDate.month + 1, objDate.year)+"']").addClass('choose-day');
+        
+      }
+
     });
 
     $(document).mouseup(function(e){

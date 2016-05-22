@@ -88,6 +88,9 @@ body{
   background: #5fc1ef;
   color:#fff;
 }
+.text-date-picker>div>table>tbody>tr>td.choose-day{
+  border-bottom:2px #5fc1ef solid;
+}
 .text-date-picker>div>table>tbody>tr>td.current-month-day.today:hover{
   background: #5fc1ef;
   color:#fff;
