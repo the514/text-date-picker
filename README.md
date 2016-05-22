@@ -59,3 +59,6 @@ include bootstrap, jquery and text-date-picker
   </script>
 
 ![TextDatePickerSmall](https://raw.githubusercontent.com/the514/text-date-picker/master/assets/img/day-festival.png)
+
+#bug report
+  email: the514xx@gmail.com
