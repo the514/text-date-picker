@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>example</title>
+  <link rel="stylesheet" href="assets/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/date-picker-style.css">
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/text-date-picker.js"></script>
+</head>
+<body>
+  <input id="DatePicker-js" class="form-control date-picker-input" type="text" name="yourname" placeholder="点击选择日期" />
+
+  <div id="DatePicker1-js" class="form-control date-picker-input" style="width:179px;">
+    点击选择日期
+  </div>
+
+  <script>
+    $("#DatePicker-js").textDatePicker({
+      setDaysInfo:[
+                  {"Date":"2016-04-10","Price":"158"},
+                  {"Date":"2016-04-11","Price":"158"},
+                  {"Date":"2016-04-12","Price":"158"},
+                  {"Date":"2016-04-13","Price":"158"},
+                  {"Date":"2016-04-14","Price":"158"},
+                  {"Date":"2016-04-15","Price":"158"},
+                  {"Date":"2016-04-16","Price":"158"},
+                  {"Date":"2016-04-17","Price":"158"},
+                  {"Date":"2016-05-01","Price":"158"},
+                  {"Date":"2016-05-02","Price":"158"},
+                  {"Date":"2016-05-03","Price":"158","Style":"background:#dff0d8;","Text":"文字1"},
+                  {"Date":"2016-05-04","Price":"59","Style":"background:#d9edf7;","Text":"文字2"},
+                  {"Date":"2016-05-05","Price":"159","Style":"background:#fcf8e3;","Text":"文字3"},
+                  {"Date":"2016-05-15","Price":"259"},
+                  {"Date":"2016-05-16","Price":"359"},
+                  {"Date":"2016-07-15","Price":"59"},
+                  {"Date":"2016-08-15","Price":"59"},
+                  {"Date":"2016-09-15","Price":"59"},
+                  {"Date":"2016-10-15","Price":"59"},
+                  {"Date":"2016-11-15","Price":"59"},
+                  {"Date":"2016-12-15","Price":"59"}
+      ],
+      festival:[
+                  {"Month":"1","Day":"1", "Name":"元旦"},
+                  {"Month":"2","Day":"2", "Name":"世界湿地日"},
+                  {"Month":"2","Day":"14", "Name":"情人节"},
+                  {"Month":"3","Day":"3", "Name":"全国爱耳日"},
+                  {"Month":"3","Day":"8", "Name":"国际妇女节"},
+                  {"Month":"3","Day":"12", "Name":"植树节"},
+                  {"Month":"3","Day":"14", "Name":"白色情人节"},
+                  {"Month":"3","Day":"15", "Name":"消费者权益日"},
+                  {"Month":"3","Day":"21", "Name":"世界森林日"},
+                  {"Month":"3","Day":"22", "Name":"世界水日"},
+                  {"Month":"3","Day":"23", "Name":"世界气象日"},
+                  {"Month":"4","Day":"1", "Name":"愚人节"},
+                  {"Month":"4","Day":"07", "Name":"世界卫生日"},
+                  {"Month":"4","Day":"22", "Name":"世界地球日"},
+                  {"Month":"4","Day":"26", "Name":"世界知识产权日"},
+                  {"Month":"5","Day":"1", "Name":"国际劳动节"},
+                  {"Month":"5","Day":"4", "Name":"青年节"},
+                  {"Month":"5","Day":"8", "Name":"世界红十字日"},
+                  {"Month":"5","Day":"12", "Name":"国际护士节"},
+                  {"Month":"5","Day":"15", "Name":"国际家庭日"},
+                  {"Month":"5","Day":"17", "Name":"世界电信日"},
+                  {"Month":"5","Day":"31", "Name":"世界无烟日"},
+                  {"Month":"6","Day":"1", "Name":"国际儿童节"},
+                  {"Month":"6","Day":"5", "Name":"世界环境日"},
+                  {"Month":"6","Day":"23", "Name":"国际奥林匹克日"},
+                  {"Month":"6","Day":"26", "Name":"国际禁毒日"},
+                  {"Month":"7","Day":"1", "Name":"中国共产党诞生日"},
+                  {"Month":"7","Day":"7", "Name":"抗日战争纪念日"},
+                  {"Month":"7","Day":"11", "Name":"世界人口日"},
+                  {"Month":"8","Day":"1", "Name":"建军节"},
+                  {"Month":"8","Day":"12", "Name":"国际青年节"},
+                  {"Month":"9","Day":"10", "Name":"教师节"},
+                  {"Month":"9","Day":"16", "Name":"国际臭氧层保护日"},
+                  {"Month":"9","Day":"27", "Name":"世界旅游日"},
+                  {"Month":"10","Day":"1", "Name":"国庆节"},
+                  {"Month":"10","Day":"4", "Name":"世界动物日"},
+                  {"Month":"10","Day":"5", "Name":"世界教师日"},
+                  {"Month":"10","Day":"9", "Name":"世界邮政日"},
+                  {"Month":"10","Day":"16", "Name":"世界粮食日"},
+                  {"Month":"10","Day":"24", "Name":"联合国日"},
+                  {"Month":"10","Day":"31", "Name":"万圣节"},
+                  {"Month":"11","Day":"8", "Name":"记者节"},
+                  {"Month":"11","Day":"17", "Name":"国际大学生节"},
+                  {"Month":"12","Day":"1", "Name":"世界爱滋病日"},
+                  {"Month":"12","Day":"3", "Name":"世界残疾人日"},
+                  {"Month":"12","Day":"9", "Name":"世界足球日"},
+                  {"Month":"12","Day":"25", "Name":"圣诞节"}
+      ]
+    });
+  $("#DatePicker1-js").textDatePicker({"templet":"small"});
+  </script>
+
+</body>
+</html>
