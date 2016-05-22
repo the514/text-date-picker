@@ -296,6 +296,7 @@
 
   $.fn.textDatePicker = function(object) {
 
+    object==undefined?object={}:object;
     var thisId = $(this);
     var thisIdName = $(this).attr("id");
 
@@ -399,16 +400,10 @@
       
       });
 
-    }).on('change', "#"+thisIdName+"-text-date-picker .year-select", function() {
-
-      objDate.year = $(this).val();
-
-    }).on('change', "#"+thisIdName+"-text-date-picker .month-select", function() {
-
-      objDate.month = parseInt($(this).val()) - 1;
-
     }).on('click', "#"+thisIdName+"-text-date-picker span.glyphicon-ok-sign", function() {
 
+      objDate.year = $("#"+thisIdName+"-text-date-picker .year-select").val();
+      objDate.month = parseInt($("#"+thisIdName+"-text-date-picker .month-select").val()) - 1;
       theDatePicker.init(thisIdName, thisId, object.setDaysInfo, object.festival);
       (object.templet=="small")?$("#"+thisIdName+"-text-date-picker").addClass("small"):"";
 
